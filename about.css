@@ -1,0 +1,297 @@
+html, body {
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Delius", serif;
+}
+
+body {
+    background: linear-gradient(250deg, #f6a97b, #8ab6f9, #1e3a8a);
+    color: #ffffff;
+    line-height: 1.6;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Header */
+header {
+    color: #fff5e1;
+    font-weight: 100;
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px 10px 10px;
+}
+
+nav .logo img {
+    width: 300px;
+    height: 100px;
+}
+
+nav .nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav .nav-links ul li {
+    display: inline-block;
+}
+
+nav .nav-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links ul li a:hover {
+    color: #16325B;
+}
+
+nav .login-signup a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-right: 30px;
+}
+
+/* General Section Styles */
+section {
+    width: 80%;
+    text-align: center;
+    padding: 40px 15px;
+    margin: 20px auto; /* Center the section horizontally */
+    color: #fff5e1;
+}
+
+section h1, section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+section ul li {
+    margin-bottom: 15px;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #16325B;
+    border-radius: 10px;
+}
+
+/* Our Mission Section */
+.our-mission {
+    background-color: #07839D;
+    border-radius: 10px;
+}
+
+/* Who We Serve Section */
+.who-we-serve {
+    background-color: #3A8EC7;
+    border-radius: 10px;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #3468A5;
+    border-radius: 10px;
+}
+
+.why-choose-us ul {
+    text-align: left;
+}
+
+.why-choose-us li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* How It Works Section */
+.how-it-works {
+    background-color: #4C82C3;
+    border-radius: 10px;
+}
+
+.how-it-works ul {
+    margin-bottom: 20px;
+}
+
+.how-it-works li {
+    font-size: 1.1rem;
+}
+
+/* Services Section */
+.services {
+
+    border-radius: 10px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    padding: 20px;
+    border-radius: 8px;
+    width: 280px;
+    text-align: center;
+}
+
+.service-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1.1rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    section h1, section h2 {
+        font-size: 2rem;
+    }
+    
+    section p, section ul li {
+        font-size: 1rem;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.service-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1.1rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    section h1, section h2 {
+        font-size: 2rem;
+    }
+    
+    section p, section ul li {
+        font-size: 1rem;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #09031f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 1px;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    color: #78B7D0;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: #fff5e1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #78B7D0;
+}
+
+.social-icons a {
+    color: #fff5e1;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.social-icons img {
+    width: 50px;
+}
+
+.social-icons a:hover {
+    color: #ff6969;
+}

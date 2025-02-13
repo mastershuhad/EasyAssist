@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+    background: url('images/newbackgroud.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    line-height: 1.6;
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Header Section */
+header {
+    /* background-color: #212121;*/
+     color: #fff5e1;
+     font-family: "Delius", serif;
+     font-weight: 30;
+     font-style: normal;
+ }
+ 
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 30px 10px 10px;
+ }
+ 
+ nav .logo img {
+     width: 300px;
+     height: 100px;
+ }
+ 
+ nav .nav-links ul {
+     list-style: none;
+     display: flex;
+     gap: 25px;
+ }
+ 
+ nav .nav-links ul li {
+     display: inline-block;
+ }
+ 
+ nav .nav-links ul li a {
+     color: #ffffff; /* Default color */
+     text-decoration: none;
+     font-size: 1.5rem;
+     font-family: "Delius", serif;
+     font-weight: 400;
+     font-style: normal;
+     transition: color 0.3s ease; /* Smooth transition effect */
+ }
+ 
+ nav .nav-links ul li a:hover {
+     color: #16325B; /* Red color on hover */
+ }
+ nav .login-signup a {
+     color: #fff;
+     text-decoration: none;
+     font-size: 1rem;
+     margin-right: 30px;
+ }
+ 
+
+/* Login Container */
+.login-container {
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align the box towards the right */
+    height: 79.7vh;
+    width: 100%;
+}
+
+/* Login Box */
+.login-box {
+    background: rgba(255, 245, 225, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 245, 225, 0.5);
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    margin-right: 15%; /* This will shift the box towards the center from the right */
+}
+
+
+h2 {
+    color: #230270;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    text-align: left;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 245, 225, 0.1);
+    color: #000;
+    outline: none;
+}
+
+button {
+    background: #f8c3a4;
+    color: #212121;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #16325B;
+    color: #fff;
+}
+
+p {
+    margin-top: 10px;
+}
+
+p a {
+    color: #230270;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,290 @@
+html, body {
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+ /* Global Styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Delius", serif;
+}
+
+body {
+    background: linear-gradient(250deg, #f6a97b, #8ab6f9, #1e3a8a);
+    color: #ffffff;
+    line-height: 1.6;
+    font-weight: 400;
+    font-style: normal;
+}
+.background-image {
+    background: url('images/newbackgroud.jpg') no-repeat center center/cover;
+    height: 90vh; /* Adjust height to fit content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out elements */
+    padding: 5px;
+    position: relative;
+}
+/* Header */
+header {
+   /* background-color: #212121;*/
+    color: #fff5e1;
+    font-weight: 100;
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px 10px 10px;
+}
+
+nav .logo img {
+    width: 300px;
+    height: 100px;
+}
+
+nav .nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav .nav-links ul li {
+    display: inline-block;
+}
+
+nav .nav-links ul li a {
+    color: #ffffff; /* Default color */
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+nav .nav-links ul li a:hover {
+    color: #16325B; /* Red color on hover */
+}
+nav .login-signup a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-right: 30px;
+}
+
+/* Adjust Welcome Note Section */
+.welcome-note {
+    position: relative; /* Changed to relative to allow stacking */
+    top: unset; /* Remove the top alignment */
+    left: unset; /* Remove left alignment */
+    transform: none; /* Remove transform effect */
+    text-align: right;
+    margin-top: 20px; /* Add margin to separate from the background image */
+    z-index: 10;
+    padding: 5px 50px;
+}
+
+.welcome-note h1 {
+    font-size: 3rem; /* Large headline */
+    font-weight: 600;
+    margin-bottom: 20px; /* Add margin to separate from the search bar */
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8); /* Subtle shadow for readability */
+}
+
+.welcome-note .search-bar {
+    margin-top: 20px; /* Space below the welcome note */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-note p {
+    font-size: 1.5rem; /* Subheadline */
+    font-weight: 300;
+    margin-bottom: 20px; /* Add margin to separate the paragraph and search bar */
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8); /* Subtle shadow for readability */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensure items align properly */
+    gap: 5px; /* Add spacing between input and button */
+    margin: 10px 0;
+}
+
+.search-bar input[type="text"] {
+    width: 40%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Slight border effect */
+    border-radius: 20px; /* Rounded edges */
+    background: rgba(255, 255, 255, 0.2); /* Glassy background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2), 0 1px 3px rgba(0, 0, 0, 0.5); /* Subtle white shadow */
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: #fff5e1; /* Placeholder color */
+    opacity: 0.7;
+}
+
+.search-bar input[type="text"]:focus {
+    box-shadow: 0 6px 8px rgba(255, 255, 255, 0.3), 0 2px 4px rgba(0, 0, 0, 0.6); /* Slightly enhanced shadow on focus */
+    border-color: rgba(255, 255, 255, 0.4); /* Glow effect on focus */
+}
+
+.search-bar:hover{
+    transform: scale(1.01);
+}
+
+.search-bar button {
+    padding: 15px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #f8c3a4;
+    color: #110c01;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(255, 105, 105, 0.3), 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.search-bar button:hover {
+    color: #fff5e1;
+    background-color: #16325B;
+    box-shadow: 0 6px 8px rgba(255, 105, 105, 0.5), 0 3px 6px rgba(0, 0, 0, 0.6); /* Enhance shadow on hover */
+}
+
+/* Category Section */
+.category-section {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.category-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.category-card {
+    background-color: rgba(255, 255, 255, 0.396); /* Glass-like transparency */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for definition */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 0 30px rgba(0, 0, 0, 0.2); /* Evenly spread white glow + subtle dark shadow */
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    width: 325px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add transition for hover effect */
+}
+
+.category-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(0, 0, 0, 0.4); /* Stronger, even glow and shadow on hover */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Slightly enhance border effect on hover */
+}
+
+.category-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.category-card a {
+    display: inline-block;
+    background-color: #78B7D0;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.category-card a:hover {
+    color: #ffffff;
+    background-color: #16325B;
+}
+
+
+/* Footer */
+footer {
+    background-color: #09031f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.footer-section {
+    flex: 1;
+    margin: 1px;
+    min-width: 200px;
+}
+.footer-section h2 {
+   
+    color: #78B7D0;
+    margin-bottom: 15px;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin: 10px 0;
+}
+.footer-section ul li a {
+    color: #fff5e1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-section ul li a:hover {
+    color: #78B7D0;
+}
+.social-icons a {
+    color: #fff5e1;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+.social-icons img{
+    width: 50px;
+}
+.social-icons a:hover {
+    color: #ff6969;
+}
+
