@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Easy Assist</title>
+    <title>Login - Easy Assist</title>
     <link rel="stylesheet" href="signup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delius&family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
-    <script defer src="scripts.js"></script>
+    <script defer src="signup.js"></script>
 </head>
-<body class="about-page">
+<body>
     <!-- Header Section -->
     <header>
         <nav>
@@ -29,19 +29,41 @@
         </nav>
     </header>
     
-
-    
+    <!-- Login Section -->
     <section class="login-container">
         <div class="login-box">
-            <h2>Login</h2>
-            <form>
-                <label for="username">Username</label>
-                <input type="text" id="username" placeholder="Enter your username" required>
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-target="customer-login">Customer</button>
+                <button class="tab-btn" data-target="owner-login">Publisherr</button>
+            </div>
+
+            <!-- Customer Login Form -->
+            <form id="customer-login" class="login-form active-form">
+                <h2>Customer Login</h2>
+                <label for="customer-username">Username</label>
+                <input type="text" id="customer-username" placeholder="Enter your username" required>
                 
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter your password" required>
+                <label for="customer-password">Password</label>
+                <input type="password" id="customer-password" placeholder="Enter your password" required>
                 
-                <button type="submit">Login</button>
+                <div class="button-container">
+                    <button type="submit">Login</button>
+                </div>
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </form>
+
+            <!-- Website Owner Login Form -->
+            <form id="owner-login" class="login-form">
+                <h2>Website Owner Login</h2>
+                <label for="owner-username">Username</label>
+                <input type="text" id="owner-username" placeholder="Enter your username" required>
+                
+                <label for="owner-password">Password</label>
+                <input type="password" id="owner-password" placeholder="Enter your password" required>
+                
+                <div class="button-container">
+                    <button type="submit">Login</button>
+                </div>
                 <p>Don't have an account? <a href="#">Sign up</a></p>
             </form>
         </div>

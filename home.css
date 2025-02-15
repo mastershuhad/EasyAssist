@@ -23,7 +23,7 @@ body {
 }
 .background-image {
     background: url('images/newbackgroud.jpg') no-repeat center center/cover;
-    height: 90vh; /* Adjust height to fit content */
+    height: 110vh; /* Adjust height to fit content */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Space out elements */
@@ -42,7 +42,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px 10px 10px;
+    padding: 5px 25px 10px 10px;
 }
 
 nav .logo img {
@@ -245,6 +245,7 @@ footer {
 
 .footer-container {
     display: flex;
+    text-align: left;
     justify-content: space-between;
     max-width: 1300px;
     margin: auto;
