@@ -36,7 +36,13 @@ nav {
 }
 
 nav .logo img {
-    width: 300px;
+    width: 250px;
+    height: 100px;
+}
+
+nav .logo img {
+    padding-top: 15px;
+    width: 250px;
     height: 100px;
 }
 

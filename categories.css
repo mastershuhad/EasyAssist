@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    background: linear-gradient(250deg, #f6a97b, #8ab6f9, #1e3a8a);
+    color: #ffffff;
+    font-family: "Delius", serif;
+    line-height: 1.6;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header (Same as Homepage) */
+header {
+    color: #fff5e1;
+    font-weight: 100;
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px 10px 10px;
+}
+
+nav .logo img {
+    padding-top: 15px;
+    width: 250px;
+    height: 100px;
+}
+
+nav .nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav .nav-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links ul li a:hover {
+    color: #16325B;
+}
+
+/* Title Section */
+.title-section {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.title-section h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.title-section p {
+    font-size: 1.2rem;
+}
+
+/* Electronics Website Links */
+.electronics-links {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.link-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.link-card {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+.link-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.link-card h3 {
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+.link-card p {
+    color: #000;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.link-card a {
+    display: inline-block;
+    background-color: #78B7D0;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.link-card a:hover {
+    color: #ffffff;
+    background-color: #16325B;
+}
+
+/* Footer */
+footer {
+    background-color: #09031f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

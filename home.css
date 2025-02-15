@@ -23,7 +23,7 @@ body {
 }
 .background-image {
     background: url('images/newbackgroud.jpg') no-repeat center center/cover;
-    height: 110vh; /* Adjust height to fit content */
+    height: 100vh; /* Adjust height to fit content */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Space out elements */
@@ -42,11 +42,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 25px 10px 10px;
+    padding:5px 25px 10px 10px;
 }
 
+
 nav .logo img {
-    width: 300px;
+    padding-top: 15px;
+    width: 250px;
     height: 100px;
 }
 

@@ -20,14 +20,18 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3px 36.5px 10px 10px;
+    padding: 2px 38px 10px 10px;
 }
 
 nav .logo img {
-    width: 300px;
+    width: 250px;
     height: 100px;
 }
 
+nav .logo img {
+    width: 250px;
+    height: 100px;
+}
 nav .nav-links ul {
     list-style: none;
     display: flex;
@@ -117,6 +121,7 @@ nav .login-signup a {
 h2 {
     color: #230270;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 label {
@@ -153,11 +158,21 @@ button {
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
+    width: 40%;
 }
 
 button:hover {
     background: #16325B;
     color: #fff;
+}
+
+.button-container {
+    margin-top: 20px; /* Adjust the value as needed */
+    text-align: center;
+}
+
+input[type="password"] {
+    margin-bottom: 20px; /* Adds space below the password input */
 }
 
 p {
