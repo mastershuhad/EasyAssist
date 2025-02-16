@@ -163,11 +163,11 @@ nav .login-signup a {
     box-shadow: 0 4px 6px rgba(255, 105, 105, 0.3), 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
-.search-bar button:hover {
-    color: #fff5e1;
-    background-color: #16325B;
-    box-shadow: 0 6px 8px rgba(255, 105, 105, 0.5), 0 3px 6px rgba(0, 0, 0, 0.6); /* Enhance shadow on hover */
+/* Search Bar */
+.search-bar:hover{
+    transform: scale(1.01);
 }
+
 
 /* Category Section */
 .category-section {
@@ -255,7 +255,7 @@ footer {
 }
 .footer-section {
     flex: 1;
-    margin: 1px;
+    margin: 10px;
     min-width: 200px;
 }
 .footer-section h2 {
@@ -287,97 +287,69 @@ footer {
 .social-icons img{
     width: 50px;
 }
-.social-icons a:hover {
-    color: #ff6969;
+.footer-bottom {
+    margin-top: 0px;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between; /* Spreads items */
-    align-items: center;
-    flex-wrap: wrap; /* Ensures wrapping */
-    padding: 10px 20px;
-}
-
-/* Hide items on small screens & use a menu button */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Hides menu links */
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Below the navbar */
-        left: 0;
-        width: 100%;
-        background-color: #212121;
-        text-align: center;
-    }
-
-    .nav-links.active {
-        display: flex; /* Show when active */
-    }
-
-    .menu-icon {
-        display: block; /* Show menu button */
-    }
-}
-
-/* Hide menu icon on larger screens */
-.menu-icon {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-/* Default Navbar */
+/* Default Navbar - Nav links are visible on larger screens */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-   
+    padding:5px 25px 10px 10px;
 }
-
-/* Hide menu icon on larger screens */
-.menu-icon {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-    color: #fff5e1;
-}
-
-/* Navigation links */
-.nav-links {
-    display: flex;
-}
-
 .nav-links ul {
     display: flex;
-    list-style: none;
-    gap: 15px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Responsive Navbar for Mobile */
-@media (max-width: 768px) {
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Mobile View - Hide nav links and show menu icon */
+@media screen and (max-width: 768px) {
     .nav-links {
-        display: none; /* Hide by default */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
+        display: none; /* Hide nav links on mobile */
         width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
         text-align: center;
-        padding: 10px 0;
+        padding-top: 60px; /* Add space from top */
     }
 
     .nav-links.active {
-        display: flex; /* Show when active */
-    }
-
-    .menu-icon {
-        display: block; /* Show menu icon */
+        display: block; /* Show nav links when active */
     }
 
     .nav-links ul {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: column; /* Stack the links vertically */
+    }
+
+    .nav-links ul li {
+        margin: 20px 0;
+    }
+
+    .menu-icon {
+        display: block; /* Show menu icon on mobile */
     }
 }
+
+/* For Desktop */
+@media screen and (min-width: 769px) {
+    .menu-icon {
+        display: none; /* Hide menu icon on larger screens */
+    }
+}
+

@@ -164,7 +164,19 @@ nav .nav-links ul li a:hover {
 .property-links {
     padding-bottom: 50px;
 }
+.groceries-links{
+    padding-bottom: 50px;
+}
 
-.footer-bottom {
-    margin-top: 0px;
+.education-links{
+    padding-bottom: 50px;
+}
+.agriculture-links{
+    padding-bottom: 50px;
+}
+.transport-links{
+    padding-bottom: 50px;
+}
+.restaurant-links{
+    padding-bottom: 50px;
 }
