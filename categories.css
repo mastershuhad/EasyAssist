@@ -114,6 +114,7 @@ nav .nav-links ul li a:hover {
 
 .link-card a {
     display: inline-block;
+    flex-direction: column;
     background-color: #78B7D0;
     color: #000;
     padding: 10px 20px;
