@@ -63,12 +63,7 @@ nav .nav-links ul li a:hover {
     font-size: 1.2rem;
 }
 
-/* Electronics Website Links */
-.electronics-links {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
+
 
 .link-container {
     display: flex;
@@ -128,10 +123,48 @@ nav .nav-links ul li a:hover {
     background-color: #16325B;
 }
 
-/* Footer */
-footer {
-    background-color: #09031f;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+/* Common styles for all category pages */
+.category-links {
+    padding-bottom: 50px; /* Adds space below the last card */
+}
+
+
+.electronics-links {
+    padding-bottom: 50px;
+}
+
+.clothing-links {
+    padding-bottom: 50px;
+}
+
+.cosmetics-links {
+    padding-bottom: 50px;
+}
+
+.accessories-links {
+    padding-bottom: 50px;
+}
+
+.home-appliances-links {
+    padding-bottom: 50px;
+}
+
+.hair-beauty-links {
+    padding-bottom: 50px;
+}
+
+.home-garden-links {
+    padding-bottom: 50px;
+}
+
+.automotive-links {
+    padding-bottom: 50px;
+}
+
+.property-links {
+    padding-bottom: 50px;
+}
+
+.footer-bottom {
+    margin-top: 0px;
 }
