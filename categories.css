@@ -149,7 +149,7 @@ nav .nav-links ul li a:hover {
     padding-bottom: 50px;
 }
 
-.hair-beauty-links {
+.beauty-links {
     padding-bottom: 50px;
 }
 
@@ -178,5 +178,14 @@ nav .nav-links ul li a:hover {
     padding-bottom: 50px;
 }
 .restaurant-links{
+    padding-bottom: 50px;
+}
+.food-links{
+    padding-bottom: 50px;
+}
+.entertainment-links{
+    padding-bottom: 50px;
+}
+.health-links{
     padding-bottom: 50px;
 }
