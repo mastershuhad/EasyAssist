@@ -1,105 +1,56 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Hamburger Menu Toggle
-    const menuIcon = document.querySelector(".menu-icon");
-    const navLinks = document.querySelector(".nav-links");
-
-    if (menuIcon && navLinks) {
-        menuIcon.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-        });
-    }
-
     // Smooth Scroll for Services and Contact Sections
-    const servicesLink = document.getElementById("services-link");
-    const servicesSection = document.getElementById("services-section");
+    const scrollToSection = (linkId, sectionId) => {
+        const link = document.getElementById(linkId);
+        const section = document.getElementById(sectionId);
+        if (link && section) {
+            link.addEventListener("click", (event) => {
+                event.preventDefault();
+                section.style.display = "block"; // Ensure section is visible
+                section.scrollIntoView({ behavior: "smooth" });
+            });
+        }
+    };
 
-    const contactLink = document.getElementById("contact-link");
-    const contactSection = document.getElementById("contact-section");
+    scrollToSection("services-link", "services-section");
+    scrollToSection("contact-link", "contact-section");
 
-    if (servicesLink && servicesSection) {
-        servicesLink.addEventListener("click", (event) => {
-            event.preventDefault(); // Prevent default navigation
-            servicesSection.style.display = "block"; // Show the services section
-            servicesSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the section
-        });
-    }
-
-    if (contactLink && contactSection) {
-        contactLink.addEventListener("click", (event) => {
-            event.preventDefault(); // Prevent default navigation
-            contactSection.style.display = "block"; // Show the contact section
-            contactSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the section
-        });
-    }
-
-    // Scroll to Top Button (Optional)
+    // Scroll to Top Button
     const scrollToTopButton = document.getElementById("scroll-to-top");
     if (scrollToTopButton) {
         scrollToTopButton.addEventListener("click", () => {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
+            window.scrollTo({ top: 0, behavior: "smooth" });
         });
     }
 
-    // Add a smooth scroll effect to all anchor links on the page
-    const anchorLinks = document.querySelectorAll("a[href^='#']");
-    anchorLinks.forEach((link) => {
-        link.addEventListener("click", (event) => {
-            event.preventDefault();
-            const targetId = link.getAttribute("href").substring(1);
-            const targetElement = document.getElementById(targetId);
-
-            if (targetElement) {
+    // Smooth Scroll for Internal Anchor Links
+    document.querySelectorAll("a[href^='#']").forEach((link) => {
+        const targetId = link.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            link.addEventListener("click", (event) => {
+                event.preventDefault();
                 targetElement.scrollIntoView({ behavior: "smooth" });
-            }
-        });
-    });
-});
-
-// Function to toggle the mobile menu
-function toggleMenu() {
-    document.querySelector(".nav-links").classList.toggle("active");
-}
-
-// Dynamic content for the footer (optional)
-document.addEventListener("DOMContentLoaded", () => {
-    const footer = document.querySelector("footer");
-    if (footer) {
-        const date = new Date();
-        const year = date.getFullYear();
-        const footerText = footer.querySelector(".footer-text");
-        if (footerText) {
-            footerText.innerHTML = `© ${year} Easy Assist. All rights reserved.`;
+            });
         }
+    });
+
+    // Dynamic Footer Year
+    const footerText = document.querySelector(".footer-text");
+    if (footerText) {
+        footerText.innerHTML = `© ${new Date().getFullYear()} Easy Assist. All rights reserved.`;
     }
-});
 
-// Additional functionality for login/signup toggle (if required)
-const loginSignupToggle = document.getElementById("login-signup-toggle");
-const loginForm = document.getElementById("login-form");
-const signupForm = document.getElementById("signup-form");
+    // Login/Signup Toggle
+    const loginSignupToggle = document.getElementById("login-signup-toggle");
+    const loginForm = document.getElementById("login-form");
+    const signupForm = document.getElementById("signup-form");
 
-if (loginSignupToggle) {
-    loginSignupToggle.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (loginForm && signupForm) {
+    if (loginSignupToggle && loginForm && signupForm) {
+        loginSignupToggle.addEventListener("click", (event) => {
+            event.preventDefault();
             loginForm.classList.toggle("active");
             signupForm.classList.toggle("active");
-        }
-    });
-}
-
-// Services section dynamic display
-document.addEventListener("DOMContentLoaded", () => {
-    const servicesLink = document.getElementById("services-link");
-    const servicesSection = document.getElementById("services-section");
-    if (servicesLink && servicesSection) {
-        servicesLink.addEventListener("click", (event) => {
-            event.preventDefault(); // Prevent default navigation
-            servicesSection.style.display = "block"; // Show the services section
-            servicesSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the section
         });
     }
 });

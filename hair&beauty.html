@@ -14,32 +14,60 @@
 <body>
 
     <!-- Header Section -->
+    <script defer src="categories.js"></script>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html"><img src="images/Logo final design.png" alt="Logo"></a>
-            </div>         
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="about.html#services-section">Services</a></li>
-                    <li><a href="about.html#contact-section">Contact</a></li>
-                    <li><a href="signup.html">Login/Signup</a></li>
-                </ul>
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/Logo final design.png" alt="Logo"></a>
+                </div>         
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html#services-section">Services</a></li>
+                        <li><a href="about.html#contact-section">Contact</a></li>
+                        <li><a href="signup.html">Login/Signup</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <ul id="category-dropdown" class="dropdown-menu">
+                <li><a href="food.html">Foods</a></li>
+                <li><a href="groceries.html">Groceries</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="clothing.html">Clothes & Shoes</a></li>
+                <li><a href="cosmetics.html">Cosmetics</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="homeappliances.html">Home Appliances</a></li>
+                <li><a href="hair&beauty.html">Hair & Beauty</a></li>
+                <li><a href="home&garden.html">Home & Garden</a></li>
+                <li><a href="automotive&motorcycle.html">Automotive & Motorcycle</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="entertainment.html">Entertainment</a></li>
+                <li><a href="agriculture.html">Agriculture</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="health.html">Health</a></li>
+            </ul>
+        </header>
+        <section class="title-section">
+            <div class="category-header">
+                <h1 class="category-title">Best Websites for Hair & Beauty</h1>
+                <div id="hamburger-btn" class="hamburger-menu">Categories ☰</div>
             </div>
-        </nav>
-    </header>
-
-    <!-- Title Section -->
-    <section class="title-section">
-        <h1>Best Websites for Hair & Beauty</h1>
-        <p>Discover the top online stores for hair and beauty products.</p>
-    </section>
-
+            <p>Discover the top online stores for hair and beauty products.</p>
+        </section>
     <!-- Website Links Section -->
     <section class="beauty-links">
         <div class="link-container">
+            <div class="link-card">
+                <img src="images/britishcosmetics.png" alt="British Cosmetics">
+                <h3>British Cosmetics</h3>
+                <p>British Cosmetics is committed to furthering the success story of the Sri Lankan cosmetics industry, scaling new heights of personal beauty care and lifestyle.
+                </p>
+                <div class="rating">⭐⭐⭐⭐⭐ (4.9/5)</div>
+                <a href="https://www.britishcosmetics.com/" target="_blank">Visit Now</a>
+            </div>
             <div class="link-card">
                 <img src="images/salonliyo.jpg" alt="salonliyo">
                 <h3>Liyo Salon</h3>
@@ -60,7 +88,7 @@
                 <img src="images/salonnayana.png" alt="salonnayana">
                 <h3>Salon Nayana</h3>
                 <p>Experience a salon legacy of 40+ years led by our founder Nayana Karunaratne, with our world-class hair & beauty services in Colombo.</p>
-                <div class="rating">⭐⭐⭐⭐☆ (3.5/5)</div>
+                <div class="rating">⭐⭐⭐☆☆ (3.4/5)</div>
                 <a href="https://www.salonnayana.com/" target="_blank">Visit Now</a>
             </div>
             <div class="link-card">
@@ -70,6 +98,35 @@
                 <div class="rating">⭐⭐⭐⭐☆ (4.1/5)</div>
                 <a href="https://salonzero.lk/" target="_blank">Visit Now</a>
             </div>
+            <div class="link-card">
+                <img src="images/watsons.png" alt="Watsons.lk">
+                <h3>Watsons.lk</h3>
+                <p>Welcome to Watsans.lk, where over 20 years of experience in the beauty and personal care industry meet innovation and authenticity.</p>
+                <div class="rating">⭐⭐⭐⭐☆ (4.2/5)</div>
+                <a href="https://watsans.lk/" target="_blank">Visit Now</a>
+            </div>
+            <div class="link-card">
+                <img src="images/kiki.png" alt="Kiki Beauty">
+                <h3>Kiki Beauty</h3>
+                <p>Discover Kiki Beauty, Sri Lanka's premier beauty store with top brands. Enjoy island-wide delivery and a user-friendly experience.</p>
+                <div class="rating">⭐⭐⭐⭐☆ (4.0/5)</div>
+                <a href="https://kikibeauty.lk/" target="_blank">Visit Now</a>
+            </div>
+            <div class="link-card">
+                <img src="images/bilesma.png" alt="Bilesma Natural">
+                <h3>Bilesma Natural</h3>
+                <p>Welcome to Watsans.lk, where over 20 years of experience in the beauty and personal care industry meet innovation and authenticity.</p>
+                <div class="rating">⭐⭐⭐⭐☆ (4.2/5)</div>
+                <a href="https://bilesmanatural.lk/" target="_blank">Visit Now</a>
+            </div>
+            <div class="link-card">
+                <img src="images/blushme.png" alt="Blush Me">
+                <h3>Blush Me</h3>
+                <p>Your destination for luxury fragrances and beauty products.</p>
+                <div class="rating">⭐⭐⭐⭐☆ (4.1/5)</div>
+                <a href="https://www.blushme.lk/" target="_blank">Visit Now</a>
+            </div>
+           
             
         </div>
     </section>

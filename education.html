@@ -12,55 +12,90 @@
     <link href="https://fonts.googleapis.com/css2?family=Delius&family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Section -->
+    <script defer src="categories.js"></script>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html"><img src="images/Logo final design.png" alt="Logo"></a>
-            </div>         
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="about.html#services-section">Services</a></li>
-                    <li><a href="about.html#contact-section">Contact</a></li>
-                    <li><a href="signup.html">Login/Signup</a></li>
-                </ul>
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/Logo final design.png" alt="Logo"></a>
+                </div>         
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html#services-section">Services</a></li>
+                        <li><a href="about.html#contact-section">Contact</a></li>
+                        <li><a href="signup.html">Login/Signup</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <ul id="category-dropdown" class="dropdown-menu">
+                <li><a href="food.html">Foods</a></li>
+                <li><a href="groceries.html">Groceries</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="clothing.html">Clothes & Shoes</a></li>
+                <li><a href="cosmetics.html">Cosmetics</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="homeappliances.html">Home Appliances</a></li>
+                <li><a href="hair&beauty.html">Hair & Beauty</a></li>
+                <li><a href="home&garden.html">Home & Garden</a></li>
+                <li><a href="automotive&motorcycle.html">Automotive & Motorcycle</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="entertainment.html">Entertainment</a></li>
+                <li><a href="agriculture.html">Agriculture</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="health.html">Health</a></li>
+            </ul>
+        </header>
+        <section class="title-section">
+            <div class="category-header">
+                <h1 class="category-title">Best Websites for Education</h1>
+                <div id="hamburger-btn" class="hamburger-menu">Categories ☰</div>
             </div>
-        </nav>
-    </header>
-
-    <!-- Title Section -->
-    <section class="title-section">
-        <h1>Best Websites for Education</h1>
-        <p>Find top educational resources, courses, and learning platforms.</p>
-    </section>
+            <p>Find top educational resources, courses, and learning platforms.</p>
+        </section>
 
     <!-- Website Links Section -->
     <section class="education-links">
         <div class="link-container">
             <div class="link-card">
-                <img src="images/coursera.png" alt="Coursera">
-                <h3>Coursera</h3>
-                <p>Access high-quality online courses from top universities and institutions.</p>
+                <img src="images/DPeducation.png" alt="DP Education">
+                <h3>DP Education</h3>
+                <p>A comprehensive free online platform offering interactive learning from preschool to advanced subjects like Math, Science, and English. It aims to provide equitable access to quality education for all students in Sri Lanka.</p>
                 <div class="rating">⭐⭐⭐⭐⭐ (4.8/5)</div>
-                <a href="https://www.coursera.org/" target="_blank">Visit Now</a>
+                <a href="https://www.dpeducation.lk/en/" target="_blank">Visit Now</a>
             </div>
             
             <div class="link-card">
-                <img src="images/udemy.png" alt="Udemy">
-                <h3>Udemy</h3>
-                <p>Learn from a vast collection of online courses across various domains.</p>
+                <img src="images/elearning.png" alt="eLearning.lk">
+                <h3>eLearning.lk</h3>
+                <p>A premier online learning and teaching platform in Sri Lanka, providing a wide range of courses across various disciplines. It emphasizes quality content tailored to the Sri Lankan educational context, including courses available in Sinhala.</p>
                 <div class="rating">⭐⭐⭐⭐☆ (4.5/5)</div>
-                <a href="https://www.udemy.com/" target="_blank">Visit Now</a>
+                <a href="https://elearning.lk/" target="_blank">Visit Now</a>
             </div>
 
             <div class="link-card">
-                <img src="images/edx.png" alt="edX">
-                <h3>edX</h3>
-                <p>Gain knowledge from world-class universities and institutions.</p>
+                <img src="images/Lanka-Academy.png" alt="Lanka Academy">
+                <h3>Lanka Academy</h3>
+                <p>An online education platform connecting students with top lecturers both locally and internationally. It offers professional courses, school classes, and free courses, focusing on dependability, integrity, and quality. </p>
                 <div class="rating">⭐⭐⭐⭐⭐ (4.7/5)</div>
-                <a href="https://www.edx.org/" target="_blank">Visit Now</a>
+                <a href="https://www.lankaacademy.lk/" target="_blank">Visit Now</a>
+            </div>
+            <div class="link-card">
+                <img src="images/siphala.png" alt="eSiphala.lk">
+                <h3>eSiphala.lk</h3>
+                <p>Touted as Sri Lanka's largest e-learning platform, eSiphala.lk offers a variety of distant learning classrooms. It provides courses across multiple disciplines, aiming to make online education accessible to a broad audience. 
+                </p>
+                <div class="rating">⭐⭐⭐⭐☆ (4.1/5)</div>
+                <a href="https://www.esiphala.lk/" target="_blank">Visit Now</a>
+            </div>
+            <div class="link-card">
+                <img src="images/StudyWay.png" alt="StudyWay.lk">
+                <h3>StudyWay.lk</h3>
+                <p>This platform offers comprehensive course listings, a user-friendly interface, and valuable educational resources, making it a go-to site for quality education and career growth in Sri Lanka. </p>
+                <div class="rating">⭐⭐⭐⭐☆ (4.2/5)</div>
+                <a href="https://www.studyway.lk/" target="_blank">Visit Now</a>
             </div>
         </div>
     </section>

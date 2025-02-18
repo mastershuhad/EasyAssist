@@ -12,96 +12,110 @@
     <link href="https://fonts.googleapis.com/css2?family=Delius&family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+    <script defer src="categories.js"></script>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html"><img src="images/Logo final design.png" alt="Easy Assist Logo"></a>
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/Logo final design.png" alt="Logo"></a>
+                </div>         
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html#services-section">Services</a></li>
+                        <li><a href="about.html#contact-section">Contact</a></li>
+                        <li><a href="signup.html">Login/Signup</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <ul id="category-dropdown" class="dropdown-menu">
+                <li><a href="food.html">Foods</a></li>
+                <li><a href="groceries.html">Groceries</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="clothing.html">Clothes & Shoes</a></li>
+                <li><a href="cosmetics.html">Cosmetics</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="homeappliances.html">Home Appliances</a></li>
+                <li><a href="hair&beauty.html">Hair & Beauty</a></li>
+                <li><a href="home&garden.html">Home & Garden</a></li>
+                <li><a href="automotive&motorcycle.html">Automotive & Motorcycle</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="entertainment.html">Entertainment</a></li>
+                <li><a href="agriculture.html">Agriculture</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="health.html">Health</a></li>
+            </ul>
+        </header>
+        <section class="title-section">
+            <div class="category-header">
+                <h1 class="category-title">Best Grocery Shopping Websites</h1>
+                <div id="hamburger-btn" class="hamburger-menu">Categories ☰</div>
             </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="about.html#services-section">Services</a></li>
-                    <li><a href="about.html#contact-section">Contact</a></li>
-                    <li><a href="signup.html">Login/Signup</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Title Section -->
-    <section class="title-section">
-        <h1>Best Grocery Shopping Websites</h1>
-        <p>Find the best platforms to shop for groceries online in Sri Lanka.</p>
-    </section>
-
+            <p>Find the best platforms to shop for groceries online in Sri Lanka.</p>
+        </section>
     <!-- Website Links Section -->
     <section class="grocery-links">
         <div class="link-container">
             <div class="link-card">
+                <img src="images/gargills.png" alt="Cargills Online">
                 <h3>Cargills Online</h3>
                 <p>Order fresh groceries and essentials from Cargills Online.</p>
                 <div class="rating">⭐⭐⭐⭐⭐ (4.5/5)</div>
                 <a href="https://cargillsonline.com/" target="_blank">Visit Now</a>
             </div>
             <div class="link-card">
+                <img src="images/keells.png" alt="Cargills Online">
                 <h3>Keells</h3>
                 <p>Shop from Keells' wide range of fresh produce and grocery items.</p>
                 <div class="rating">⭐⭐⭐⭐⭐ (4.6/5)</div>
                 <a href="https://keellssuper.com/" target="_blank">Visit Now</a>
             </div>
             <div class="link-card">
+                <img src="images/glomark.png" alt="Glomark">
                 <h3>Glomark</h3>
                 <p>Premium online supermarket offering a variety of local and imported goods.</p>
                 <div class="rating">⭐⭐⭐⭐☆ (4.4/5)</div>
                 <a href="https://glomark.lk/" target="_blank">Visit Now</a>
             </div>
             <div class="link-card">
+                <img src="images/spar2u.png" alt="spar2u">
                 <h3>SPAR2U</h3>
                 <p>Get your groceries delivered with SPAR’s online shopping platform.</p>
                 <div class="rating">⭐⭐⭐⭐☆ (4.3/5)</div>
                 <a href="https://spar2u.lk/" target="_blank">Visit Now</a>
             </div>
             <div class="link-card">
+                <img src="images/kapruka.png" alt="Kapruka">
                 <h3>Kapruka</h3>
                 <p>Shop for groceries, gifts, and more with Kapruka's trusted online service.</p>
                 <div class="rating">⭐⭐⭐⭐☆ (4.2/5)</div>
                 <a href="https://www.kapruka.com/" target="_blank">Visit Now</a>
             </div>
             <div class="link-card">
-                <h3>PickMe Food</h3>
-                <p>Order food and groceries with PickMe Food’s quick delivery service.</p>
-                <div class="rating">⭐⭐⭐⭐☆ (4.1/5)</div>
-                <a href="https://pickme.lk/food/" target="_blank">Visit Now</a>
-            </div>
-            <div class="link-card">
+                <img src="images/ustore.png" alt="uStore.lk">
                 <h3>uStore.lk</h3>
                 <p>Convenient online grocery shopping with a wide variety of products.</p>
                 <div class="rating">⭐⭐⭐⭐☆ (4.0/5)</div>
                 <a href="https://ustore.lk/" target="_blank">Visit Now</a>
             </div>
             <div class="link-card">
+                <img src="images/grocerylanka.png" alt="GroceryLanka">
                 <h3>GroceryLanka</h3>
                 <p>Shop for Sri Lankan groceries and essentials with home delivery.</p>
                 <div class="rating">⭐⭐⭐☆☆ (3.9/5)</div>
                 <a href="https://grocerylanka.com/" target="_blank">Visit Now</a>
             </div>
             <div class="link-card">
+                <img src="images/onlinekade.png" alt="OnlineKade">
                 <h3>OnlineKade</h3>
                 <p>Your go-to online store for daily grocery needs in Sri Lanka.</p>
                 <div class="rating">⭐⭐⭐☆☆ (3.8/5)</div>
                 <a href="https://onlinekade.lk/" target="_blank">Visit Now</a>
             </div>
-            <div class="link-card">
-                <h3>ONARO Online</h3>
-                <p>Get fresh groceries and household essentials delivered to your doorstep.</p>
-                <div class="rating">⭐⭐⭐☆☆ (3.7/5)</div>
-                <a href="https://onaro.lk/" target="_blank">Visit Now</a>
-            </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <div class="footer-bottom">

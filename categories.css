@@ -189,3 +189,156 @@ nav .nav-links ul li a:hover {
 .health-links{
     padding-bottom: 50px;
 }
+.grocery-links{
+    padding-bottom: 50px;
+}
+
+/* Container for the title and button */
+.category-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+/* Style for the category title */
+.category-title {
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+
+.hamburger-menu {
+    position: absolute;
+    right: 20px; /* Adjust distance from the right */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 28px; /* Adjust size as needed */
+    cursor: pointer;
+}
+.hamburger-menu:hover{
+    color: #16325B;
+
+}
+.hamburger-active {
+    transform: translateY(50px); /* Moves button down */
+}
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 230px; /* Adjusted */
+    right: 42px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 9999; /* Ensures it's above other elements */
+}
+
+/* Show the Menu with a Smooth Slide Down */
+.dropdown-menu.show-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+/* Dropdown links */
+.dropdown-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    color: #b35555;
+}
+/* Position the dropdown below the button */
+#dropdown-menu {
+    position: absolute;
+    top: 100%; /* Places it directly below the button */
+    right: 0;
+    background-color: white;
+    width: 200px; /* Adjust width as needed */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: none; /* Hidden by default */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* Style for dropdown items */
+#dropdown-menu a {
+    display: block;
+    padding: 12px 16px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+#dropdown-menu a:hover {
+    background-color: #f5f5f5;
+}
+#hamburger-btn {
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+/* Dropdown menu container */
+.dropdown {
+    position: absolute;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px;
+    
+    /* Initially hidden */
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.4s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out;
+}
+
+/* When dropdown is open */
+.dropdown.show {
+    max-height: 500px;  /* Adjust height as needed */
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Dropdown items */
+.dropdown a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.dropdown a:hover {
+    background: #ff6969;
+    color: white;
+}

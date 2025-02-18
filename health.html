@@ -13,34 +13,60 @@
 </head>
 <body>
     <!-- Header -->
+    <script defer src="categories.js"></script>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html"><img src="images/Logo final design.png" alt="Easy Assist Logo"></a>
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/Logo final design.png" alt="Logo"></a>
+                </div>         
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html#services-section">Services</a></li>
+                        <li><a href="about.html#contact-section">Contact</a></li>
+                        <li><a href="signup.html">Login/Signup</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <ul id="category-dropdown" class="dropdown-menu">
+                <li><a href="food.html">Foods</a></li>
+                <li><a href="groceries.html">Groceries</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="clothing.html">Clothes & Shoes</a></li>
+                <li><a href="cosmetics.html">Cosmetics</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="homeappliances.html">Home Appliances</a></li>
+                <li><a href="hair&beauty.html">Hair & Beauty</a></li>
+                <li><a href="home&garden.html">Home & Garden</a></li>
+                <li><a href="automotive&motorcycle.html">Automotive & Motorcycle</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="entertainment.html">Entertainment</a></li>
+                <li><a href="agriculture.html">Agriculture</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="health.html">Health</a></li>
+            </ul>
+        </header>
+        <section class="title-section">
+            <div class="category-header">
+                <h1 class="category-title">Best Health Websites </h1>
+                <div id="hamburger-btn" class="hamburger-menu">Categories ☰</div>
             </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="about.html#services-section">Services</a></li>
-                    <li><a href="about.html#contact-section">Contact</a></li>
-                    <li><a href="signup.html">Login/Signup</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Title Section -->
-    <section class="title-section">
-        <h1>Best Health Websites</h1>
-        <p>Explore the best online pharmacies, wellness stores, and medical consultation platforms in Sri Lanka.</p>
-    </section>
-
+            <p> Explore the best online pharmacies, wellness stores, and medical consultation platforms in Sri Lanka. </p>
+        </section>
     <!-- Website Links Section -->
     <section class="health-links">
         <div class="link-container">
 
-            
+            <div class="link-card">
+                <img src="images/nawaloka.png" alt="Nawaloka Hospitals PLC">
+                <h3>Nawaloka Hospitals PLC</h3>
+                <p>Nawaloka Hospital Colombo - Where 400 beds and 600 medical consultants unite, creating the epitome of premier healthcare in a single, extraordinary location.</p>
+                <div class="rating">⭐⭐⭐⭐⭐ (4.9/5)</div>
+                <a href="https://www.nawaloka.com/" target="_blank">Visit Now</a>
+            </div>
             <div class="link-card">
                 <img src="images/hemas.png" alt="Hemas Hospitals">
                 <h3>Hemas Hospitals</h3>
@@ -50,32 +76,47 @@
                 <a href="https://hemashospitals.com/" target="_blank">Visit Now</a>
             </div>
             <div class="link-card">
-                <img src="images/pharmacy.lk.png" alt="Pharmacy.lk">
-                <h3>Pharmacy.lk</h3>
-                <p>Order prescription and over-the-counter medicine online with home delivery.</p>
+                <img src="images/healthylife.png" alt="healthylife">
+                <h3>healthylife.lk</h3>
+                <p>No more endless queues when you schedule convenient online doctor appointments at Healthy Life Colombo 07! We Offer Cashless OPD Facility & Accepts Insurance.</p>
                 <div class="rating">⭐⭐⭐⭐⭐ (4.7/5)</div>
-                <a href="https://www.pharmacy.lk/" target="_blank">Visit Now</a>
+                <a href="https://healthylife.lk/" target="_blank">Visit Now</a>
             </div>
             <div class="link-card">
-                <img src="images/healthguard.png" alt="Healthguard Pharmacy">
-                <h3>Healthguard Pharmacy</h3>
-                <p>Trusted online pharmacy in Sri Lanka with a wide range of health and wellness products.</p>
+                <img src="images/durdans.png" alt="Durdans Hospita">
+                <h3>Durdans Hospita</h3>
+                <p>Find your doctor. Channel a doctor quick and easy with Direct Appointments at Durdans Hospital. Most convenient way to book your doctor appointment.</p>
                 <div class="rating">⭐⭐⭐⭐☆ (4.5/5)</div>
-                <a href="https://www.healthguard.lk/" target="_blank">Visit Now</a>
+                <a href="https://www.durdans.com/" target="_blank">Visit Now</a>
             </div>
             <div class="link-card">
-                <img src="images/wellnessshop.png" alt="Wellness Shop">
-                <h3>Wellness Shop</h3>
-                <p>Find organic products, vitamins, and supplements for a healthier lifestyle.</p>
+                <img src="images/ninewells.png" alt="Ninewells Hospital">
+                <h3>Ninewells Hospital</h3>
+                <p>Ninewells stands as the only dedicated Women and Childcare private hospital in Sri Lanka. We provide world-class facilities for the very best healthcare.</p>
                 <div class="rating">⭐⭐⭐⭐⭐ (4.6/5)</div>
-                <a href="https://www.wellnessshop.lk/" target="_blank">Visit Now</a>
+                <a href="https://www.ninewellshospital.lk/" target="_blank">Visit Now</a>
             </div>
             <div class="link-card">
-                <img src="images/healmedi.png" alt="Healmedi">
-                <h3>Healmedi</h3>
-                <p>Consult specialized doctors and order medicine online with islandwide delivery.</p>
-                <div class="rating">⭐⭐⭐⭐⭐ (4.7/5)</div>
-                <a href="https://www.healmedi.lk/" target="_blank">Visit Now</a>
+                <img src="images/medihelplk_logo.jpeg" alt="Medihelp Hospitals">
+                <h3>Medihelp Hospitals</h3>
+                <p>A wide array of health packages to suit every need. Medihelp Hospitals stands as a prominent healthcare provider in Sri Lanka, recognized for its excellence.
+                </p>
+                <div class="rating">⭐⭐⭐⭐⭐ (4.9/5)</div>
+                <a href="https://www.medihelp.lk" target="_blank">Visit Now</a>
+            </div>
+            <div class="link-card">
+                <img src="images/asiri.png" alt="asiri hospital">
+                <h3>asiri hospital</h3>
+                <p>Asiri Hospital Holdings PLC (formerly Asiri Hospitals PLC), doing business as Asiri Health, is the largest private healthcare provider in Sri Lanka.</p>
+                <div class="rating">⭐⭐⭐⭐⭐ (4.9/5)</div>
+                <a href="https://www.nawaloka.com/" target="_blank">Visit Now</a>
+            </div>
+            <div class="link-card">
+                <img src="images/lankahospitals.png" alt="Lanka Hospitals">
+                <h3>Lanka Hospitals</h3>
+                <p>Lanka Hospitals is a leading private hospital in Sri Lanka, known for its high-quality healthcare services, advanced medical technology, and internationally accredited standards.</p>
+                <div class="rating">⭐⭐⭐⭐⭐ (4.9/5)</div>
+                <a href="https://www.lankahospitals.com/" target="_blank">Visit Now</a>
             </div>
         </div>
     </section>

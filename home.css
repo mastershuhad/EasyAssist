@@ -42,7 +42,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:5px 25px 10px 10px;
+    padding:10px 25px 10px 10px;
 }
 
 
@@ -55,7 +55,7 @@ nav .logo img {
 nav .nav-links ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 9px;
 }
 
 nav .nav-links ul li {
@@ -290,14 +290,20 @@ footer {
 .footer-bottom {
     margin-top: 0px;
 }
-
-/* Default Navbar - Nav links are visible on larger screens */
+/* Default Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:5px 25px 10px 10px;
+    padding: 5px 0;
 }
+
+/* Navigation Links (Desktop) */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
 .nav-links ul {
     display: flex;
     list-style-type: none;
@@ -305,51 +311,30 @@ footer {
     margin: 0;
 }
 
+.nav-links ul li {
+    padding: 5px 10px;
+}
+
 .nav-links ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
+    transition: color 0.3s ease;
 }
+
+.nav-links ul li a:hover {
+    color: #ff6969;
+}
+
+/* Mobile Menu Icon (Hidden by Default) */
 .menu-icon {
     display: none;
     font-size: 30px;
     cursor: pointer;
-    color: #fff;
-}
-
-/* Mobile View - Hide nav links and show menu icon */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none; /* Hide nav links on mobile */
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
-        padding-top: 60px; /* Add space from top */
-    }
-
-    .nav-links.active {
-        display: block; /* Show nav links when active */
-    }
-
-    .nav-links ul {
-        flex-direction: column; /* Stack the links vertically */
-    }
-
-    .nav-links ul li {
-        margin: 20px 0;
-    }
-
-    .menu-icon {
-        display: block; /* Show menu icon on mobile */
-    }
-}
-
-/* For Desktop */
-@media screen and (min-width: 769px) {
-    .menu-icon {
-        display: none; /* Hide menu icon on larger screens */
-    }
+    color: #ffffff;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 100;
 }
 
