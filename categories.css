@@ -9,49 +9,60 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* Header (Same as Homepage) */
+/* Header */
 header {
-    color: #fff5e1;
-    font-weight: 100;
-    font-style: normal;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 25px 10px 10px;
-}
-
-nav .logo img {
-    padding-top: 15px;
-    width: 250px;
-    height: 100px;
-}
-
-nav .nav-links ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-nav .nav-links ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 400;
-    transition: color 0.3s ease;
-}
-
-nav .nav-links ul li a:hover {
-    color: #16325B;
-}
+    /* background-color: #212121;*/
+     color: #fff5e1;
+     font-weight: 100;
+     font-style: normal;
+ }
+ 
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding:10px 25px 10px 10px;
+ }
+ 
+ nav .logo img { 
+     width: 250px;
+     height: 100px;
+ }
+ 
+ nav .nav-links ul {
+     list-style: none;
+     display: flex;
+     gap: 9px;
+ }
+ 
+ nav .nav-links ul li {
+     display: inline-block;
+ }
+ 
+ nav .nav-links ul li a {
+     color: #000; /* Default color */
+     text-decoration: none;
+     font-size: 1.5rem;
+     font-weight: 400;
+     font-style: normal;
+     transition: color 0.3s ease; /* Smooth transition effect */
+ }
+ 
+ nav .nav-links ul li a:hover {
+     color: #fff; /* Red color on hover */
+ }
+ nav .login-signup a {
+     color: #fff;
+     text-decoration: none;
+     font-size: 1rem;
+     margin-right: 30px;
+ }
+ 
 
 /* Title Section */
 .title-section {
-    text-align: center;
-    padding: 30px 20px;
+    text-align: center;  
+    padding-bottom: 25px;
 }
 
 .title-section h1 {
@@ -63,13 +74,11 @@ nav .nav-links ul li a:hover {
     font-size: 1.2rem;
 }
 
-
-
 .link-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 50px;
 }
 
 .link-card {
@@ -210,6 +219,8 @@ nav .nav-links ul li a:hover {
 }
 
 .hamburger-menu {
+    max-height: 450px; /* Limit height */
+    overflow-y: auto;  /* Enable vertical scrolling */
     position: absolute;
     right: 20px; /* Adjust distance from the right */
     top: 50%;
@@ -224,49 +235,77 @@ nav .nav-links ul li a:hover {
 .hamburger-active {
     transform: translateY(50px); /* Moves button down */
 }
+
+.hamburger-menu {
+    max-height: 450px; /* Limit height */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    scrollbar-width: thin; /* For Firefox */
+  }
+    
+.hamburger-menu::-webkit-scrollbar-thumb {
+    background-color: #f6a97b;
+    border-radius: 3px;
+  }
+  
+.hamburger-menu::-webkit-scrollbar-thumb:hover {
+    background-color: #f6a97b;
+  }
+  
 /* Dropdown menu */
+/* Style for dropdown menu */
 .dropdown-menu {
-    display: none;
+    display: none; /* Hide by default */
     position: absolute;
-    top: 230px; /* Adjusted */
-    right: 42px;
-    background: white;
+    top: 190px; /* Adjust based on your header height */
+    right: 33px; /* Adjust based on your layout */
+    background-color: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 9999; /* Ensures it's above other elements */
+    border-radius: 10px;
+    width: 200px; /* Adjust width as needed */
+    max-height: 480px; /* Set max height */
+    overflow-y: auto; /* Enable scrolling */
+    scrollbar-width: thin; /* For Firefox */
+    z-index: 1000;
 }
 
-/* Show the Menu with a Smooth Slide Down */
-.dropdown-menu.show-menu {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
+/* Optional scrollbar styling for Chrome/Safari */
+.dropdown-menu::-webkit-scrollbar {
+    width: 6px;
 }
 
-.dropdown-menu.active {
-    display: block;
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: #f6a97b;
+    border-radius: 3px;
 }
-/* Dropdown links */
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .dropdown-menu li {
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
 
-.dropdown-menu li:last-child {
-    border-bottom: none;
-}
-
 .dropdown-menu a {
     text-decoration: none;
+    text-align: right;
+    padding-right: 10px;
     color: black;
-    font-size: 16px;
     display: block;
 }
 
 .dropdown-menu a:hover {
-    color: #b35555;
+    background-color: #fbe4d8;
 }
+
+/* Show dropdown when active */
+.show {
+    display: block;
+}
+
 /* Position the dropdown below the button */
 #dropdown-menu {
     position: absolute;

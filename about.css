@@ -40,12 +40,6 @@ nav .logo img {
     height: 100px;
 }
 
-nav .logo img {
-    padding-top: 15px;
-    width: 250px;
-    height: 100px;
-}
-
 nav .nav-links ul {
     list-style: none;
     display: flex;
@@ -57,7 +51,7 @@ nav .nav-links ul li {
 }
 
 nav .nav-links ul li a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 400;
@@ -66,7 +60,7 @@ nav .nav-links ul li a {
 }
 
 nav .nav-links ul li a:hover {
-    color: #16325B;
+    color: #fff;
 }
 
 nav .login-signup a {

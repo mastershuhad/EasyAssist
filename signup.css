@@ -28,10 +28,6 @@ nav .logo img {
     height: 100px;
 }
 
-nav .logo img {
-    width: 250px;
-    height: 100px;
-}
 nav .nav-links ul {
     list-style: none;
     display: flex;
